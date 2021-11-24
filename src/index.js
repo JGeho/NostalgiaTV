@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import Server from './server';
 import reportWebVitals from './reportWebVitals';
-import axios from 'axios'
+import axios from 'axios';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
