@@ -3,7 +3,8 @@
 
 import React from 'react'
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import Form from 'react-bootstrap/Form'
+import Form from 'react-bootstrap/Form';
+// import FormSelect from 'react-bootstrap/esm/FormSelect';
 
 export default function Homepage() {
     const optionArray = [
