@@ -1,2 +1,0 @@
-# NostalgiaTV
-DigitalCrafts Capstone Project
