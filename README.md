@@ -12,8 +12,8 @@ This is a full-stack application that allows visitors to search for all of the T
 Probably Heroku
 
 ## Technologies/Concepts
--HTML/CSS
--JavaScript
--React
--Node/Express
--PostgreSQL
+- HTML/CSS
+- JavaScript
+- React
+- Node/Express
+- PostgreSQL
