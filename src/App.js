@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Search from "./components/Search";
-import Homepage from './components/Homepage';
+import HomePage from './components/Homepage';
 import Splashpage from './components/SplashPage';
 import youtubeApi from "./api/youtube";
 import VideoList from "./components/VideoList";
@@ -32,16 +32,18 @@ export default class App extends React.Component {
     });
   };
 
+  //https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=PLB03EA9545DD188C3&key=MY_API_KEY
+
   onSearch = async (keyword) => {
-    const response = await youtubeApi.get("/search", {
+    const response = await youtubeApi.get("/playlistItems", {
       params: {
-        q: keyword
+        playlistId: keyword
       }
     });
-    //console.log(response);
+    // console.log(response.data.items[0].snippet.resourceId.videoId);
     this.setState({
       videoMetaInfo: response.data.items,
-      selectedVideoID: response.data.items[0].id.videoId
+      selectedVideoId: response.data.items[0].snippet.resourceId.videoId
     });
     console.log(this.state);
   };
@@ -49,9 +51,10 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Search onSearch={this.onSearch}/>
-        <VideoList onVideoSelected={this.onVideoSelected} data={this.state.videoMetaInfo}/>
-        <VideoPlayer videoId={this.state.selectedVideoId}/>
+        {/* <Search onSearch={this.onSearch} /> */}
+        <HomePage onSearch={this.onSearch} />
+        <VideoList onVideoSelected={this.onVideoSelected} data={this.state.videoMetaInfo} />
+        <VideoPlayer videoId={this.state.selectedVideoId} />
       </div>
     );
   }
