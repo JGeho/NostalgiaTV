@@ -3,12 +3,11 @@ import React from 'react'
 export default function SplashPage() {
     return (
         <div>
-            WELCOME TO NOSTALGIA TV
+            <h1>Welcome to NostalgiaTV</h1>
 
-            {/* <a id="github-button" className="btn btn-block btn-social btn-github">
-                <i className="fa fa-github"></i> Sign in with GitHub
-            </a> */}
+            <h4>Please Log In With GitHub to Access the Main Site</h4>
+
+            <a href="auth/github">Click me to log in using GitHub</a>
         </div>
     )
 }
-
