@@ -45,7 +45,6 @@ export default class App extends React.Component {
       videoMetaInfo: response.data.items,
       selectedVideoId: response.data.items[0].snippet.resourceId.videoId
     });
-    console.log(this.state);
   };
 
   render() {
