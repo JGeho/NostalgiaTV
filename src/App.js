@@ -1,8 +1,8 @@
 import './App.css';
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import Splashpage from './components/SplashPage';
-import Home from './components/Home';
+import Splashpage from './components/splashPage/SplashPage';
+import Home from './components/home/Home';
 import About from './components/about/About';
 
 export default function App() {

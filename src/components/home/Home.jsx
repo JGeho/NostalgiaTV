@@ -1,12 +1,12 @@
-import '../App.css';
+// import '../App.css';
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import Search from "../components/Search";
-import HomePage from '../components/Homepage';
-import Splashpage from '../components/SplashPage';
-import youtubeApi from "../api/youtube";
-import VideoList from "../components/VideoList";
-import VideoPlayer from "../components/VideoPlayer";
+import Search from "./Search";
+import HomePage from './Homepage';
+import Splashpage from '../splashPage/SplashPage';
+import youtubeApi from "../../api/youtube";
+import VideoList from "./VideoList";
+import VideoPlayer from "./VideoPlayer";
 
 
 export default class Home extends React.Component {
