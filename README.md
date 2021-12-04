@@ -1,7 +1,7 @@
-# Nostalgia TV
+# Laff Box
 
 ## Overview
-This is a full-stack application that allows visitors to search for all of the TV shows you miss all the way back to the 60's
+This is a full-stack application that allows visitors to search for any and all types of comedy on the web. 
 
 ## Developers
 - Eric Fricke
