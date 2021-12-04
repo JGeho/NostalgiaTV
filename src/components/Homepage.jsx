@@ -17,11 +17,11 @@ export default function Homepage(props) {
 
     const optionArray = [
         { value: '', label: "None" },
-        { value: '10', label: "Reality TV" },
-        { value: '17', label: "Sports" },
-        { value: 'PLoXkGkpREHNCkbXU8M6kxwzZ-xTr1_Mhs', label: "Comedy" },
-        { value: '1', label: "Cartoons" },
-        { value: '1', label: "Drama" }
+        { value: 'PLoXkGkpREHNBerh-2Ql6R5GqRk-Hz20O_', label: "2000s Stand Up" },
+        { value: 'PLoXkGkpREHNCkbXU8M6kxwzZ-xTr1_Mhs', label: "90s Stand Up" },
+        { value: 'PL5gYcc7ZOfxe-mOlOCiKB5tfKGPwM9eWl', label: "SNL" },
+        { value: 'PLQ7_GA82PpMFEC6PYfxBFPCc1qnAio3A-', label: "Movie Bloopers" },
+        { value: 'PLn8MTymNebMCUuF1DI-IdIjCde_Jh5u7e', label: "Jerri Springer" }
     ];
     const [categoryValue, setCategoryValue] = useState('');
     // const [data, setData] = useState([]);
