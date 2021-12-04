@@ -1,7 +1,6 @@
 import React from "react";
 
 const Videoplayer = ({ videoId }) => {
-  console.log(videoId);
 
   if (!videoId) {
     return (

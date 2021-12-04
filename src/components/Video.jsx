@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/_video.css";
 
 function selectVideo(videoIdObj, onVideoSelected) {
-  onVideoSelected(videoIdObj.videoId);
+  onVideoSelected(videoIdObj.resourceId.videoId);
 }
 function getCss(imageurl) {
   const _styles = {
@@ -15,9 +15,10 @@ function getCss(imageurl) {
   return _styles;
 }
 function constructVideoTitles(vidoesData, onVideoSelected) {
-  return vidoesData.map(({ snippet, id }, index) => {
+
+  return vidoesData.map(({ snippet }, index) => {
     return (
-      <div className="video" key={index} onClick={() => selectVideo(id, onVideoSelected)}>
+      <div className="video" key={index} onClick={() => selectVideo(snippet, onVideoSelected)}>
         <div style={getCss(snippet.thumbnails.high.url)} key={index} />
         <p className="title">{snippet.title}</p>
       </div>
