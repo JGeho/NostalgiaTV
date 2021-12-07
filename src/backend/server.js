@@ -1,55 +1,63 @@
-/*-------Github2 Passport Code--------*/
+import React, { useState } from "react";
+import axios from "axios";
+import MessagesDisplay from '../components/home/MessageDisplay'
+import PostMessage from "../components/home/PostMessage";
 
-passport.use(new GitHubStrategy({
-    clientID: GITHUB_CLIENT_ID,
-    clientSecret: GITHUB_CLIENT_SECRET,
-    callbackURL: "http://127.0.0.1:3000/auth/github/callback"
+//Config Postgres
+
+//Fake Messages for intial testing
+/*
+const fakeMessages = [
+  {
+    user: Bob,
+    msg: "test message 1",
   },
-  function(accessToken, refreshToken, profile, done) {
-    User.findOrCreate({ githubId: profile.id }, function (err, user) {
-      return done(err, user);
-    });
+  {
+    user: Derp,
+    msg: "test message 2",
   }
-));
+]
+*/
 
-app.get('/auth/github',
-  passport.authenticate('github', { scope: [ 'user:email' ] }));
-
-app.get('/auth/github/callback', 
-  passport.authenticate('github', { failureRedirect: '/login' }),
-  function(req, res) {
-    // Successful authentication, redirect home.
-    res.redirect('/');
+function App() {
+  //Initialize States
+  var [messages, setMessages] = useState([]);
+  var [messagesLoaded, setMessagesLoaded] = React.useState(false);
+  var [msgItems, setMsgItems] = useState({
+    messeageTxt: "",
   });
 
-/*-------Slack Passport Code-------*/
+  //Using an empty array sets it to trigger just on load
+  React.useEffect(function() {
 
-const {CLIENT_ID, CLIENT_SECRET, PORT} = process.env,
-      SlackStrategy = require('passport-slack').Strategy,
-      passport = require('passport'),
-      express = require('express'),
-      app = express();
+  }, []);
 
-// setup the strategy using defaults 
-passport.use(new SlackStrategy({
-    clientID: CLIENT_ID,
-    clientSecret: CLIENT_SECRET
-  }, (accessToken, refreshToken, profile, done) => {
-    // optionally persist profile data
-    done(null, profile);
+  //Dynamically Update States for the form
+  function handleFormEdits(event) {
+    const { name, value } = event.target;
+    setMsgItems(prevState => ({ ...prevState, [name]: value }));
   }
-));
 
-app.use(passport.initialize());
-app.use(require('body-parser').urlencoded({ extended: true }));
+  //Submit a new post
+  function handleFormPost() {
 
-// path to start the OAuth flow
-app.get('/auth/slack', passport.authorize('slack'));
+    //Create an object to match the API
+    let newMsg = {
+      
+    };
 
-// OAuth callback url
-app.get('/auth/slack/callback', 
-  passport.authorize('slack', { failureRedirect: '/login' }),
-  (req, res) => res.redirect('/')
-);
+    //Insert into DB;
+  }
 
-app.listen(PORT);
+  return (
+    <div className="msgBoardC" style={{ width: "80%", margin: "40px auto" }}>
+      <h1>Message Board</h1>
+      <PostMessage
+        msgItems={msgItems}
+        handleFormEdits={handleFormEdits}
+        handleFormPost={handleFormPost}
+      />
+      <MessagesDisplay messages={messages} messagesLoaded={messagesLoaded} />
+    </div>
+  );
+}

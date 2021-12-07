@@ -50,3 +50,26 @@ body,
 .form-controls label {
   display: none;
 }
+
+/*Create column divider*/
+.leftCol {
+  padding-right: 100px;
+  border-right: solid white 1px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.leftCol:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+      transform: scale(1.05);
+}
+.rightCol {
+  padding-left: 100px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.rightCol:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+      transform: scale(1.05);
+}
