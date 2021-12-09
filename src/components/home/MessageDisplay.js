@@ -1,7 +1,7 @@
 import React from "react";
 import Message from "./Message";
 
-export default function MessagesDisplay({ messages, messagesLoaded }) {
+export default function MessageDisplay({ messages, messagesLoaded }) {
   function getMessages() {
     if (messagesLoaded) {
       return messages.map(function(msgItem, i) {

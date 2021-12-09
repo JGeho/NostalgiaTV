@@ -7,12 +7,19 @@ import Splashpage from '../splashPage/SplashPage';
 import youtubeApi from "../../api/youtube";
 import VideoList from "./VideoList";
 import VideoPlayer from "./VideoPlayer";
-
+import MessageDisplay from "./MessageDisplay";
+import PostMessage from "./PostMessage";
 
 export default class Home extends React.Component {
     state = {
         videoMetaInfo: [],
-        selectedVideoId: null
+        selectedVideoId: null,
+        messages: [],
+        messagesLoaded: false,
+        msgItems: {
+            messeageTxt: "",
+            messeageDepartment: ""
+        }
     };
 
     onVideoSelected = (videoId) => {
@@ -40,6 +47,10 @@ export default class Home extends React.Component {
                 <HomePage onSearch={this.onSearch} />
                 <VideoList onVideoSelected={this.onVideoSelected} data={this.state.videoMetaInfo} />
                 <VideoPlayer videoId={this.state.selectedVideoId} />
+                <PostMessage
+                   
+                />
+                <MessageDisplay messages={this.state.messages} messagesLoaded={this.state.messagesLoaded} />
             </React.Fragment>
         );
     }

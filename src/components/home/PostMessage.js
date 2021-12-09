@@ -1,23 +1,25 @@
 import React from "react";
 
-export default function PostMessage({
+export default function PostMessage(props){
+  const {
   userList,
   msgItems,
   handleFormEdits,
   handleFormPost
-}) {
+  } = props
+
   function userOptions() {
     //Convert Object into an array of keys to map over
-    var userKeys = Object.keys(userList);
+    //var userKeys = Object.keys(userList);
 
     //Map through array and build out the key and value pairs
-    return userKeys.map(function(key, i) {
-      return (
-        <option value={key} key={i}>
-          {userList[key]}
-        </option>
-      );
-    });
+    // return userKeys.map(function(key, i) {
+    //   return (
+    //     <option value={key} key={i}>
+    //       {userList[key]}
+    //     </option>
+    //   );
+    // });
   }
 
   //Update states of form items
@@ -46,7 +48,7 @@ export default function PostMessage({
 
         <textarea
           name="messeageTxt"
-          value={msgItems.messeageTxt}
+          //value={msgItems.messeageTxt}
           onChange={updateFormEdits}
           placeholder="Enter message"
           style={{ width: "98%", height: "80px" }}
@@ -55,7 +57,7 @@ export default function PostMessage({
 
         <select
           name="messeageuser"
-          value={msgItems.messeageuser}
+         // value={msgItems.messeageuser}
           onChange={updateFormEdits}
           id="user"
           style={{ width: "100%", height: "30px" }}
