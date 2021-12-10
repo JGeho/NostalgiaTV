@@ -6,7 +6,8 @@ class MessageBoard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: ""
+      value: "",
+      data: []
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -15,6 +16,21 @@ class MessageBoard extends React.Component {
 
   handleChange(event) {
     this.setState({ value: event.target.value });
+  }
+
+  async getMessages() {
+    const response = await fetch(`https://afternoon-stream-01263.herokuapp.com/messages`);
+    const data = await response.json();
+    this.setState({ data });
+  }
+
+  componentDidMount() {
+    // here show me the API correct like this
+    // 0:{id:1, name:"categorie one"}
+    // 1:{id:11, name:"categorie four"}
+    // 2:{id:19, name:"categorie five"}
+    // 3:{id:16, name:"categorie six"}
+    this.getMessages();
   }
 
   handleSubmit(event) {
@@ -29,22 +45,26 @@ class MessageBoard extends React.Component {
         console.log(res.data);
       })
       .catch(err => console.log(err));
-    //get request
-    fetch('https://afternoon-stream-01263.herokuapp.com/messages')
-      .then(response => response.json())
-      .then(data => console.log(data));
   }
 
 
   render() {
+    // console.log(this.state.data);
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          Write your joke sucka:
-          <textarea value={this.state.value} onChange={this.handleChange} placeholder="I pity da foo who ain't funny" />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          <label>
+            Write your joke sucka:
+            <textarea value={this.state.value} onChange={this.handleChange} placeholder="I pity da foo who ain't funny" />
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+        {this.state.data && this.state.data.map(post => (
+          <React.Fragment>
+            <p>{`${post.user} ${post.message}`}</p>
+          </React.Fragment>
+        ))}
+      </div>
     );
   }
 }
