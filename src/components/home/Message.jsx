@@ -41,10 +41,12 @@ class MessageBoard extends React.Component {
     //post request
     axios.post('https://afternoon-stream-01263.herokuapp.com/message', { user, message })
       .then(res => {
+        this.getMessages();
         console.log(res);
         console.log(res.data);
       })
       .catch(err => console.log(err));
+
   }
 
 
