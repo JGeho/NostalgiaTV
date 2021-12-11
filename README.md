@@ -1,15 +1,18 @@
-# Laff Box
+# Laugh Box
 
 ## Overview
-This is a full-stack application that allows visitors to search for any and all types of comedy on the web. 
+This is a full-stack application that allows visitors to search for several types of comedy on the web. 
 
 ## Developers
 - Eric Fricke
 - Gabriel Lopez
-- Justin Geho
+- Justin Geho 
+
+## API Docs
+https://developers.google.com/youtube/v3/docs
 
 ## Deployment
-Probably Heroku
+Heroku- Hosted the front and back ends seperately
 
 ## Technologies/Concepts
 - HTML/CSS
@@ -17,3 +20,4 @@ Probably Heroku
 - React
 - Node/Express
 - PostgreSQL
+- 
