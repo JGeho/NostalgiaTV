@@ -4,7 +4,7 @@
 This is a full-stack application that allows visitors to search for several types of comedy on the web. 
 
 ## Developers
-- Eric Fricke (Omaha, NE) <br> <img src="./src/components/about/derb.jpg" alt="Eric Pic" width="50px">
+- Eric Fricke (Omaha, NE) <br> <img src="./src/components/about/derp.jpg" alt="Eric Pic" width="50px">
 - Gabriel Lopez (Some City, TX) <br> <img src="./src/components/about/linkedinPictureReal.JPG" alt="Gabriel Pic" width="50px">
 - Justin Geho (Atlanta, GA) <br> <img src="./src/components/about/JustinPic.jpg" alt="Justin Pic" width="50px">
 
