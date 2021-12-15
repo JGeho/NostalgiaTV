@@ -1,7 +1,7 @@
 import React from 'react'
 import justinpic from './JustinPic.jpg';
-import ericpic from './JustinPic.jpg';
-import gabepic from './JustinPic.jpg';
+import ericpic from './derp.jpg';
+import gabepic from './linkedinPictureReal.JPG';
 
 import { BsGithub } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
