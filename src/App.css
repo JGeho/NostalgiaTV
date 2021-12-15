@@ -73,3 +73,25 @@ body,
   -ms-transform: scale(1.05);
       transform: scale(1.05);
 }
+
+/*About Us Styling */
+.justinpic {
+  height: 100px;
+  width: auto;
+}
+
+.ericpic {
+  height: 100px;
+  width: auto;
+}
+
+.gabepic {
+  height: 100px;
+  width: auto;
+}
+
+.icons {
+  height: 50px;
+  width: auto;
+  color: black;
+}
