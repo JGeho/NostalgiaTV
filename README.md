@@ -12,12 +12,13 @@ This is a full-stack application that allows visitors to search for several type
 https://developers.google.com/youtube/v3/docs
 
 ## Deployment
-Heroku- Hosted the front and back ends seperately
+
+Backend: https://afternoon-stream-01263.herokuapp.com/
+
 
 ## Technologies/Concepts
-- HTML/CSS
+- HTML/CSS/Bootstrap
 - JavaScript
 - React
 - Node/Express
 - PostgreSQL
-- 
