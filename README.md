@@ -6,7 +6,7 @@ This is a full-stack application that allows visitors to search for several type
 ## Developers
 - Eric Fricke (Omaha, NE)
 - Gabriel Lopez (Some City, TX)
-- Justin Geho (Atlanta, GA) <img src="./src/components/about/JustinPic.jpg" alt="Justin Pic" width="50px">
+- Justin Geho (Atlanta, GA) <br> <img src="./src/components/about/JustinPic.jpg" alt="Justin Pic" width="50px">
 
 
 ## API Docs
