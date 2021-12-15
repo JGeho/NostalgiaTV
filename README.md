@@ -4,9 +4,10 @@
 This is a full-stack application that allows visitors to search for several types of comedy on the web. 
 
 ## Developers
-- Eric Fricke
-- Gabriel Lopez
-- Justin Geho 
+- Eric Fricke (Omaha, NE)
+- Gabriel Lopez (Some City, TX)
+- Justin Geho (Atlanta, GA)
+
 
 ## API Docs
 https://developers.google.com/youtube/v3/docs
