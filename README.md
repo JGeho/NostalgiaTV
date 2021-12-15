@@ -31,9 +31,9 @@ Front-End:
 - PostgreSQL
 
 ## Screenshots:
-Early concept non-styled Splash Page
-<img src="./src/components/about/Splashpage.png" alt="Splashpage pic" width="100px">
-Home Page
-<img src="./src/components/about/Homepage.png" alt="Splashpage pic" width="100px">
-About Page
-<img src="./src/components/about/Aboutpage.png" alt="Splashpage pic" width="100px">
+Early concept non-styled Splash Page<br>
+<img src="./src/components/about/Splashpage.png" alt="Splashpage pic" width="150px"><br>
+Home Page<br>
+<img src="./src/components/about/Homepage.png" alt="Splashpage pic" width="150px"><br>
+About Page<br>
+<img src="./src/components/about/Aboutpage.png" alt="Splashpage pic" width="150px"><br>
