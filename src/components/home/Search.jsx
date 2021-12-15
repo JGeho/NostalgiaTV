@@ -5,7 +5,6 @@ class Search extends React.Component {
 
   onSearchChanged = (event) => {
     const _title = event.target.value;
-    //console.log(_title);
     this.setState({ title: _title });
   };
 
@@ -25,7 +24,7 @@ class Search extends React.Component {
               onChange={this.onSearchChanged}
               id="video-search"
               type="text"
-              placeholder="Enter Search"
+              placeholder="Enter Keyword Search"
             />
           </div>
         </form>

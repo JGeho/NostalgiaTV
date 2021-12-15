@@ -1,7 +1,6 @@
 import React from "react";
 
 const Videoplayer = ({ videoId }) => {
-
   if (!videoId) {
     return (
       <p style={{ textAlign: "center", fontSize: "18px", fontWeight: "bold" }}>
