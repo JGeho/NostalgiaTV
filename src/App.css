@@ -8,13 +8,15 @@ body,
 #root,
 .App {
   height: 100%;
+  width: auto;
   margin: 0;
+  background-color: rgb(216, 216, 216) !important;
 }
 
 .App {
   display: grid;
-  grid-template-columns: 70% 1fr;
-  grid-template-rows: 70px auto;
+  grid-template-columns: 100% 1fr;
+  grid-template-rows: 100px auto;
 }
 
 .search-form {
@@ -51,29 +53,6 @@ body,
   display: none;
 }
 
-/*Create column divider*/
-.leftCol {
-  padding-right: 100px;
-  border-right: solid white 1px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}
-.leftCol:hover {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-      transform: scale(1.05);
-}
-.rightCol {
-  padding-left: 100px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}
-.rightCol:hover {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-      transform: scale(1.05);
-}
-
 /*About Us Styling */
 .justinpic {
   height: 100px;
@@ -94,4 +73,11 @@ body,
   height: 50px;
   width: auto;
   color: black;
+}
+#rightCont {
+ max-height: 100vh;
+text-align: center;
+}
+#midCol {
+  padding-bottom: 20px;
 }

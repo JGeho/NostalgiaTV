@@ -1,28 +1,32 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
-import Message from '../home/Message';
+import { Container, Row, Col, Carousel } from 'react-bootstrap';
+import standup1 from './standup1.png'
 
 export default function Landingpage() {
   return (
-    <Container id='landingPage'>
-      <Row>
-        <Col className='leftCol'>
-          <div class="container">
-            <div class="jumbotron text-center text-primary">
-              <p>Login or Register with:</p>
-              <form method="GET" action="https://afternoon-stream-01263.herokuapp.com/auth/google">
-                <button class="btn btn-danger"><span class="fa fa-google"></span> SignIn with Google</button>
-              </form>
-            </div>
-          </div>
+    <div>
+        <Container id="rightCont">
+        <Row>
+          <Col>
+            <h1>LaffBoxTV</h1>
+            </Col>
+          </Row>
+          
+        <Col id='midCol'>
+            <img src={standup1} />
         </Col>
-        <Col className='rightCol'>
-          Right Side<br />
-          <img src='' height='' width='' /><br />
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, vero vel! Saepe harum provident velit debitis minus non, eos et ipsum eligendi, natus mollitia eum aspernatur corrupti rem, quibusdam quasi.
+        <Col>
+          <Row>
+            <form
+              method="GET"
+              action="https://afternoon-stream-01263.herokuapp.com/auth/google">
+              <button class="btn btn-danger">
+                <span class="fa fa-google"></span> Sign-in With Google
+              </button>
+            </form>
+          </Row>
         </Col>
-        <Message />
-      </Row>
-    </Container>
+        </Container>
+    </div>
   );
 }
