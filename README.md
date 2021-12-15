@@ -32,8 +32,8 @@ Front-End:
 
 ## Screenshots:
 Early concept non-styled Splash Page<br>
-<img src="./src/components/about/Splashpage.png" alt="Splashpage pic" width="150px"><br>
+<img src="./src/components/about/Splashpage.png" alt="Splashpage pic" width="300px"><br>
 Home Page<br>
-<img src="./src/components/about/Homepage.png" alt="Splashpage pic" width="150px"><br>
+<img src="./src/components/about/Homepage.png" alt="Splashpage pic" width="300px"><br>
 About Page<br>
-<img src="./src/components/about/Aboutpage.png" alt="Splashpage pic" width="150px"><br>
+<img src="./src/components/about/Aboutpage.png" alt="Splashpage pic" width="300px"><br>
