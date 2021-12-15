@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+//import React, { Component } from 'react';
+import React from 'react';
 import axios from 'axios'
 
 
@@ -61,8 +62,8 @@ class MessageBoard extends React.Component {
           </label>
           <input type="submit" value="Submit" />
         </form>
-        {this.state.data && this.state.data.map(post => (
-          <React.Fragment>
+        {this.state.data && this.state.data.map((post, index) => (
+          <React.Fragment key={index}>
             <p>{`${post.user} ${post.message}`}</p>
           </React.Fragment>
         ))}

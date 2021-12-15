@@ -1,10 +1,11 @@
 //iframe for the video
 //90s years for search parameter
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+//took out useEffect in above list
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
-import axios from 'axios';
+//import axios from 'axios';
 // import FormSelect from 'react-bootstrap/esm/FormSelect';
 
 export default function Homepage(props) {
