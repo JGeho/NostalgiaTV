@@ -9,13 +9,12 @@ function getCss(imageurl) {
     backgroundImage: `url(${imageurl})`,
     backgroundSize: "cover",
     backgroundPosition: "center center",
-    height: "180px",
+    height: "200px",
     position: "relative"
   };
   return _styles;
 }
 function constructVideoTitles(vidoesData, onVideoSelected) {
-
   return vidoesData.map(({ snippet }, index) => {
     return (
       <div className="video" key={index} onClick={() => selectVideo(snippet, onVideoSelected)}>
