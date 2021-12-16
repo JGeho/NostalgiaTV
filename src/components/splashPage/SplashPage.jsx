@@ -1,8 +1,6 @@
 import React from 'react'
 import { Container, Row, Col} from 'react-bootstrap';
-//took out Carousel from above list
 import standup1 from './standup1.png'
-
 
 export default function Landingpage() {
   return (
@@ -13,7 +11,6 @@ export default function Landingpage() {
             <h1>LaffBoxTV</h1>
             </Col>
           </Row>
-          
         <Col id='midCol'>
             <img src={standup1} alt="standup pic"/>
         </Col>
@@ -21,8 +18,8 @@ export default function Landingpage() {
             <form
               method="GET"
               action="https://afternoon-stream-01263.herokuapp.com/auth/google">
-              <button class="btn btn-danger">
-                <span class="fa fa-google"></span> Sign-in With Google
+              <button className="btn btn-danger">
+                <span className="fa fa-google"></span> Sign-in With Google
               </button>
             </form>
             </Row>
@@ -37,6 +34,10 @@ export default function Landingpage() {
           LaffBoxTV was just an idea dreamed up by a couple kids who like to laugh.<br/> Find out
           more about us <a href='/About'>here</a>. Or Don't. We're still gonna laugh ¯\_(ツ)_/¯
         </Container>
+        {console.log('No errors here but maybe check our portfolios?')}
+        {console.log('https://e-fricke.github.io')}
+        {console.log('https://gabriellopez.netlify.app/')}
+        {console.log('https://www.justingeho.com')}
     </div>
   );
 }
