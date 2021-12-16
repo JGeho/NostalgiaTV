@@ -7,10 +7,10 @@ html {
 body,
 #root,
 .App {
+  background-image: url("./back2.jpg");
   height: 100%;
   width: auto;
   margin: 0;
-  background-color: rgb(216, 216, 216) !important;
 }
 
 .App {
@@ -75,9 +75,16 @@ body,
   color: black;
 }
 #rightCont {
- max-height: 100vh;
-text-align: center;
+  text-align: center;
+  height: 70%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 70vh; /* These two lines are counted as one :-)       */
+  display: grid;
+  align-items: center;
 }
 #midCol {
   padding-bottom: 20px;
+}
+#splashFoot {
+  font-size: 18px;
+  text-align: center;
 }
