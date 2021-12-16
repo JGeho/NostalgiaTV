@@ -1,5 +1,6 @@
 import React from 'react'
-import { Container, Row, Col, Carousel } from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
+//took out Carousel from above list
 import standup1 from './standup1.png'
 
 export default function Landingpage() {
@@ -13,7 +14,7 @@ export default function Landingpage() {
           </Row>
           
         <Col id='midCol'>
-            <img src={standup1} />
+            <img src={standup1} alt="standup pic"/>
         </Col>
         <Col>
           <Row>
