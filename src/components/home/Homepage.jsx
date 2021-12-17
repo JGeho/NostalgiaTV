@@ -57,7 +57,7 @@ export default function Homepage(props) {
 
     return (
         <div>
-            <FloatingLabel controlId="floatingSelect" label="Select a category">
+            <FloatingLabel id="dropdown" controlId="floatingSelect" label="Select a category">
                 <Form.Select aria-label="Floating label select example" value={categoryValue} onChange={handleChange}>
                     {optionArray.map(option => (
                         <option key={option.label} value={option.value}>{option.label}</option>

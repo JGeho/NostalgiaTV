@@ -12,12 +12,6 @@ body,
   background-image: url('./back2.jpg');
 }
 
-/* .App {
-  display: grid;
-  grid-template-columns: 100% 1fr;
-  grid-template-rows: 100px auto;
-} */
-
  .search-form {
   border-bottom: 1px solid lightgray;
   display: flex;
@@ -54,25 +48,28 @@ body,
 
 About Us Styling
 .justinpic {
-  height: 100px;
+  height: 125px;
   width: auto;
 }
 
 .ericpic {
-  height: 100px;
+  height: 125px;
   width: auto;
 }
 
 .gabepic {
-  height: 100px;
+  height: 125px;
   width: auto;
 }
 
 .icons {
-  height: 50px;
+  height: 75px;
   width: auto;
   color: black;
+  padding: 5px;
 }
+
+/*Splashpage styles*/
 #rightCont {
   text-align: center;
   height: 70%;  
