@@ -7,7 +7,8 @@ import HomePage from './Homepage';
 import youtubeApi from "../../api/youtube";
 import VideoList from "./VideoList";
 import VideoPlayer from "./VideoPlayer";
-import Message from './Message'
+import Message from './Message';
+import '../../styles/_video.css';
 
 export default class Home extends React.Component {
     state = {
@@ -42,10 +43,12 @@ export default class Home extends React.Component {
     render() {
         return (
             <React.Fragment >
-                {/* <Search onSearch={this.onSearch} /><br></br> */}
-                <HomePage onSearch={this.onSearch} />
-                <VideoList onVideoSelected={this.onVideoSelected} data={this.state.videoMetaInfo} />
-                <VideoPlayer videoId={this.state.selectedVideoId} />
+                <Search onSearch={this.onSearch} /><br></br>
+                <div className='home-container'>
+                    <HomePage onSearch={this.onSearch} />
+                    <VideoList onVideoSelected={this.onVideoSelected} data={this.state.videoMetaInfo} />
+                    <VideoPlayer videoId={this.state.selectedVideoId} />
+                </div>
                 <Message />
             </React.Fragment>
         );
