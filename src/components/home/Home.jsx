@@ -1,7 +1,7 @@
 //import '../App.css';
 import React from 'react';
 //import { Route, Routes, Navigate } from 'react-router-dom';
-import Search from "./Search";
+// import Search from "./Search";
 import HomePage from './Homepage';
 //import Splashpage from '../splashPage/SplashPage';
 import youtubeApi from "../../api/youtube";
@@ -42,7 +42,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <React.Fragment >
-                <Search onSearch={this.onSearch} /><br></br>
+                {/* <Search onSearch={this.onSearch} /><br></br> */}
                 <HomePage onSearch={this.onSearch} />
                 <VideoList onVideoSelected={this.onVideoSelected} data={this.state.videoMetaInfo} />
                 <VideoPlayer videoId={this.state.selectedVideoId} />
