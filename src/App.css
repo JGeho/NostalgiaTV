@@ -54,24 +54,25 @@ body,
 
 /*About Us Styling */
 .justinpic {
-  height: 100px;
+  height: 125px;
   width: auto;
 }
 
 .ericpic {
-  height: 100px;
+  height: 125px;
   width: auto;
 }
 
 .gabepic {
-  height: 100px;
+  height: 125px;
   width: auto;
 }
 
 .icons {
-  height: 50px;
+  height: 75px;
   width: auto;
   color: black;
+  padding: 5px;
 }
 
 /*Splashpage styles*/
