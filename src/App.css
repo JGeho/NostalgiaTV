@@ -46,20 +46,23 @@ body,
   display: none;
 } 
 
-About Us Styling
+/*About Us Styling*/
 .justinpic {
   height: 125px;
   width: auto;
+  border-radius: 30%;
 }
 
 .ericpic {
   height: 125px;
   width: auto;
+  border-radius: 30%;
 }
 
 .gabepic {
   height: 125px;
   width: auto;
+  border-radius: 30%;
 }
 
 .icons {
