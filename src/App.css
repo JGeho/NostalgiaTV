@@ -7,19 +7,18 @@ html {
 body,
 #root,
 .App {
-  background-image: url("./back2.jpg");
   height: 100%;
-  width: auto;
   margin: 0;
+  background-image: url('./back2.jpg');
 }
 
-.App {
+/* .App {
   display: grid;
   grid-template-columns: 100% 1fr;
   grid-template-rows: 100px auto;
-}
+} */
 
-.search-form {
+ .search-form {
   border-bottom: 1px solid lightgray;
   display: flex;
   justify-content: flex-start;
@@ -51,9 +50,9 @@ body,
 
 .form-controls label {
   display: none;
-}
+} 
 
-/*About Us Styling */
+About Us Styling
 .justinpic {
   height: 100px;
   width: auto;
@@ -76,11 +75,14 @@ body,
 }
 #rightCont {
   text-align: center;
-  height: 70%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 70vh; /* These two lines are counted as one :-)       */
+  height: 70%;  
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 70vh; 
+  /* These two lines are counted as one :-)*/
   display: grid;
   align-items: center;
 }
+
 #midCol {
   padding-bottom: 20px;
 }

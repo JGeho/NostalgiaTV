@@ -1,0 +1,9 @@
+.home-container {
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    grid-template-rows: 70px auto;
+    height: 100%;
+    margin: 0;
+    /* background-image: url("../../back2.jpg"); */
+}
+
