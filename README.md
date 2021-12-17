@@ -1,4 +1,4 @@
-# Laugh Box
+# LaffBox TV
 
 ## Overview
 This is a full-stack application that allows visitors to search for several types of comedy on the web. 
