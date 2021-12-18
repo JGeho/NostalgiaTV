@@ -1,6 +1,7 @@
 //import React, { Component } from 'react';
 import React from 'react';
 import axios from 'axios'
+import { Col, Row } from 'react-bootstrap'
 
 
 class MessageBoard extends React.Component {
@@ -54,17 +55,21 @@ class MessageBoard extends React.Component {
   render() {
     // console.log(this.state.data);
     return (
-      <div>
+      <div id='mBoard'>
         <form onSubmit={this.handleSubmit}>
+        <label>
+            User:
+            <textarea value={this.state.value} onChange={this.handleChange} placeholder="What's ya name? Tony!" />
+          </label>
           <label>
-            Write your joke sucka:
-            <textarea value={this.state.value} onChange={this.handleChange} placeholder="I pity da foo who ain't funny" />
+            Say funny stuff:
+            <textarea value={this.state.value} onChange={this.handleChange} placeholder="Don't submit if it's bad." />
           </label>
           <input type="submit" value="Submit" />
         </form>
         {this.state.data && this.state.data.map((post, index) => (
           <React.Fragment key={index}>
-            <p>{`${post.user} ${post.message}`}</p>
+            <Row><Col><text>{`${post.user} ${post.message}`}</text></Col></Row>
           </React.Fragment>
         ))}
       </div>

@@ -105,3 +105,7 @@ body,
   font-size: 18px;
   text-align: center;
 }
+#mBoard {
+  text-align: center;
+  font-weight: bolder;
+}
