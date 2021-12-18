@@ -42,7 +42,7 @@ class MessageBoard extends React.Component {
   handleSubmit(event) {
     const message = this.state.joke;
     const user = this.state.user;
-    alert('You did a funny: ' + this.state.value);
+    alert('You did a funny: ' + message);
     event.preventDefault();
     //post request
     axios.post('https://afternoon-stream-01263.herokuapp.com/message', { user, message })
