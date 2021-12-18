@@ -7,7 +7,8 @@ class MessageBoard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: "",
+      user: "",
+      joke: "",
       data: []
     };
 
@@ -16,6 +17,8 @@ class MessageBoard extends React.Component {
   }
 
   handleChange(event) {
+    const target = event.target;
+    // const value = target.type === 'text' ? target.
     this.setState({ value: event.target.value });
   }
 
@@ -57,8 +60,12 @@ class MessageBoard extends React.Component {
       <div>
         <form onSubmit={this.handleSubmit}>
           <label>
+            Name:
+            <input type="text" value={this.state.user} onChange={this.handleChange} />
+          </label>
+          <label>
             Write your joke sucka:
-            <textarea value={this.state.value} onChange={this.handleChange} placeholder="I pity da foo who ain't funny" />
+            <textarea value={this.state.joke} onChange={this.handleChange} placeholder="I pity da foo who ain't funny" />
           </label>
           <input type="submit" value="Submit" />
         </form>
