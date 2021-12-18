@@ -82,6 +82,9 @@ export default function About() {
             <p>Hello, I'm Justin. I recently made the decision to change my career path. I have always loved technology and anything innovative, so what's more innovative, technological, and interesting than the INTERNET? I chose to dive headfirst into software development. I love developing websites and apps that are both beautiful and functional, from the front-end all the way to the back-end. I gained my development skills through the DigitalCrafts Full-Stack Bootcamp program in 2021. I look forward to working with all of you to build bigger, better, and more advanced software for the future!!!</p>
           </Col>
         </Row>
+        <Row>
+          <a href='/SplashPage' className="aboutlink">Return to Login</a>
+        </Row>
       </div>
     );
 }
