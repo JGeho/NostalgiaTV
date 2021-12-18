@@ -49,13 +49,11 @@ export default class Home extends React.Component {
                     <HomePage onSearch={this.onSearch} />
                     <VideoList onVideoSelected={this.onVideoSelected} data={this.state.videoMetaInfo} />
                     <VideoPlayer videoId={this.state.selectedVideoId} />
-                    
                 </div>
+                <Message />
                 <Row>
                     <a href='/About' className='homelink'>About Us</a>
                 </Row>
-
-                <Message />
             </React.Fragment>
         );
     }
