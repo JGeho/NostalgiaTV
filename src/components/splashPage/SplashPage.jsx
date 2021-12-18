@@ -13,7 +13,7 @@ export default function Landingpage() {
             </Col>
           </Row>
         <Col id='midCol'>
-            <img src={standup1} alt="standup pic"/>
+            <img src={standup1} alt="standup pic" id='midCol'/>
         </Col>
         <Row>
             <form
