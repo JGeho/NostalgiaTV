@@ -1,5 +1,6 @@
 //import '../App.css';
 import React from 'react';
+import { Row } from 'react-bootstrap'
 //import { Route, Routes, Navigate } from 'react-router-dom';
 // import Search from "./Search";
 import HomePage from './Homepage';
@@ -50,6 +51,9 @@ export default class Home extends React.Component {
                     <VideoPlayer videoId={this.state.selectedVideoId} />
                 </div>
                 <Message />
+                <Row>
+                    <a href='/About' className='homelink'>About Us</a>
+                </Row>
             </React.Fragment>
         );
     }

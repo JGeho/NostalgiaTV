@@ -79,6 +79,13 @@ body,
   font-weight: bold;
 }
 
+.homelink {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+
 /*Splashpage styles*/
 #rightCont {
   text-align: center;
