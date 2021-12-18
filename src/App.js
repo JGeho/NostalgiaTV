@@ -4,12 +4,12 @@ import { Route, Routes, Navigate } from 'react-router-dom';
 import Splashpage from './components/splashPage/SplashPage';
 import Home from './components/home/Home';
 import About from './components/about/About';
-import NavBar from './components/common/NavBar';
+//import NavBar from './components/common/NavBar';
 
 export default function App() {
   return (
     <React.Fragment>
-      <NavBar />
+      {/* <NavBar /> */}
       <div className='App'>
         <Routes>
           <Route path="/home" element={<Home />} />
