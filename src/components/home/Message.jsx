@@ -18,8 +18,9 @@ class MessageBoard extends React.Component {
 
   handleChange(event) {
     const target = event.target;
-    // const value = target.type === 'text' ? target.
-    this.setState({ value: event.target.value });
+    const value = target.value;
+    const name = target.name;
+    this.setState({ [name]: value });
   }
 
   async getMessages() {
@@ -38,8 +39,8 @@ class MessageBoard extends React.Component {
   }
 
   handleSubmit(event) {
-    const message = this.state.value;
-    const user = 'Gabriel';
+    const message = this.state.joke;
+    const user = this.state.user;
     alert('You did a funny: ' + this.state.value);
     event.preventDefault();
     //post request
@@ -61,11 +62,11 @@ class MessageBoard extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <label>
             Name:
-            <input type="text" value={this.state.user} onChange={this.handleChange} />
+            <input name='user' type="text" value={this.state.user} onChange={this.handleChange} />
           </label>
           <label>
             Write your joke sucka:
-            <textarea value={this.state.joke} onChange={this.handleChange} placeholder="I pity da foo who ain't funny" />
+            <textarea name='joke' value={this.state.joke} onChange={this.handleChange} placeholder="I pity da foo who ain't funny" />
           </label>
           <input type="submit" value="Submit" />
         </form>
