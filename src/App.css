@@ -85,6 +85,7 @@ body,
 
 #midCol {
   padding-bottom: 20px;
+  border-radius: 10%;
 }
 #splashFoot {
   font-size: 18px;
