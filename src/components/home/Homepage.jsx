@@ -22,7 +22,7 @@ export default function Homepage(props) {
         { value: 'PLoXkGkpREHNCkbXU8M6kxwzZ-xTr1_Mhs', label: "90s Stand Up" },
         { value: 'PL5gYcc7ZOfxe-mOlOCiKB5tfKGPwM9eWl', label: "SNL" },
         { value: 'PLQ7_GA82PpMFEC6PYfxBFPCc1qnAio3A-', label: "Movie Bloopers" },
-        { value: 'PLn8MTymNebMCUuF1DI-IdIjCde_Jh5u7e', label: "Jerri Springer" }
+        { value: 'PLn8MTymNebMCUuF1DI-IdIjCde_Jh5u7e', label: "Jerry Springer" }
     ];
     const [categoryValue, setCategoryValue] = useState('');
     // const [data, setData] = useState([]);
