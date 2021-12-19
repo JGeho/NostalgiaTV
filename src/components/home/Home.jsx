@@ -50,7 +50,7 @@ export default class Home extends React.Component {
                     <VideoList onVideoSelected={this.onVideoSelected} data={this.state.videoMetaInfo} />
                     <VideoPlayer videoId={this.state.selectedVideoId} />
                 </div>
-                <Message />
+                <Message user={this.props.user} />
                 <Row>
                     <a href='/About' className='homelink'>About Us</a>
                 </Row>
