@@ -72,7 +72,7 @@ class MessageBoard extends React.Component {
         <Container className='bg-transparent py-3' style={{ overflow: 'auto', height: '100%' }}>
           {this.state.data && this.state.data.slice(0).reverse().map((post, index) => (
             <React.Fragment key={index}>
-              <Card className='mb-4' style={{ width: '40rem' }}>
+              <Card className='card mb-4' style={{ width: '40rem' }}>
                 <Card.Header as="h5">{`${post.user} posted:`}</Card.Header>
                 <Card.Body className='bg-white'>
                   <Card.Text>
