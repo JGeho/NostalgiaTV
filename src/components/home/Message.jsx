@@ -69,8 +69,8 @@ class MessageBoard extends React.Component {
             </Form.Group>
           </Form>
         </Container>
-        <Container className='bg-light py-3'>
-          {this.state.data && this.state.data.map((post, index) => (
+        <Container className='bg-light py-3' style={{ overflow: 'auto', height: '100%' }}>
+          {this.state.data && this.state.data.slice(0).reverse().map((post, index) => (
             <React.Fragment key={index}>
               <Card className='mb-4' style={{ width: '40rem' }}>
                 <Card.Header as="h5">{`${post.user} posted:`}</Card.Header>
