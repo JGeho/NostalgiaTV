@@ -58,10 +58,10 @@ class MessageBoard extends React.Component {
   render() {
     return (
       <div className='message-board-container' >
-        <Container className='bg-warning pt-3'>
+        <Container className='pt-3'>
           <h2>Funny Board</h2>
-          <Form onSubmit={this.handleSubmit} style={{ width: '40rem' }}>
-            <Form.Group className="pb-3" controlId="exampleForm.ControlTextarea1">
+          <Form onSubmit={this.handleSubmit} className='form' style={{ width: '40rem' }}>
+            <Form.Group className="pb-3 lg" controlId="exampleForm.ControlTextarea1">
               <Form.Control as='textarea' name='joke' value={this.state.joke} onChange={this.handleChange} placeholder=" What made you laugh today?" />
               <div className='d-flex justify-content-end'>
                 <Button className='mt-3 px-4' variant="dark" as="input" type="submit" value="Post" />
@@ -69,7 +69,7 @@ class MessageBoard extends React.Component {
             </Form.Group>
           </Form>
         </Container>
-        <Container className='bg-light py-3' style={{ overflow: 'auto', height: '100%' }}>
+        <Container className='bg-transparent py-3' style={{ overflow: 'auto', height: '100%' }}>
           {this.state.data && this.state.data.slice(0).reverse().map((post, index) => (
             <React.Fragment key={index}>
               <Card className='mb-4' style={{ width: '40rem' }}>
