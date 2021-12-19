@@ -2,8 +2,9 @@ import './App.css';
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Splashpage from './components/splashPage/SplashPage';
-import Home from './components/home/Home';
+import HomeWrapper from './components/home/HomeWrapper';
 import About from './components/about/About';
+
 //import NavBar from './components/common/NavBar';
 
 export default function App() {
@@ -12,7 +13,7 @@ export default function App() {
       {/* <NavBar /> */}
       <div className='App'>
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/home/:id" element={<HomeWrapper />} />
           <Route path="/about" element={<About />} />
           <Route path="/splashPage" element={<Splashpage />} />
           <Route path="/" element={<Navigate to='/splashPage' />} />

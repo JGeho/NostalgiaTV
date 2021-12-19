@@ -1,14 +1,14 @@
 //import React, { Component } from 'react';
 import React from 'react';
 import axios from 'axios'
-import { Col, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap';
 
 
 class MessageBoard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      user: "",
+      // user: "",
       joke: "",
       data: []
     };
@@ -31,25 +31,19 @@ class MessageBoard extends React.Component {
   }
 
   componentDidMount() {
-    // here show me the API correct like this
-    // 0:{id:1, name:"categorie one"}
-    // 1:{id:11, name:"categorie four"}
-    // 2:{id:19, name:"categorie five"}
-    // 3:{id:16, name:"categorie six"}
+
     this.getMessages();
   }
 
   handleSubmit(event) {
-    const message = this.state.joke;
-    const user = this.state.user;
-    alert('You did a funny: ' + message);
     event.preventDefault();
+    const message = this.state.joke;
+    const user = this.props.user;
+    alert('You did a funny: ' + message);
     //post request
     axios.post('https://afternoon-stream-01263.herokuapp.com/message', { user, message })
       .then(res => {
         this.getMessages();
-        console.log(res);
-        console.log(res.data);
       })
       .catch(err => console.log(err));
 
@@ -57,14 +51,9 @@ class MessageBoard extends React.Component {
 
 
   render() {
-    // console.log(this.state.data);
     return (
       <div id='mBoard'>
         <form onSubmit={this.handleSubmit}>
-          <label>
-            Name:
-            <input name='user' type="text" value={this.state.user} onChange={this.handleChange} placeholder="What's ya name? Tony!" />
-          </label>
           <label>
             Write your joke sucka:
             <textarea name='joke' value={this.state.joke} onChange={this.handleChange} placeholder="I pity da foo who ain't funny" />
