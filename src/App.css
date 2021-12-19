@@ -47,6 +47,10 @@ body,
 } 
 
 /*About Us Styling*/
+#aboutUs {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .justinpic {
   height: 125px;
   width: auto;

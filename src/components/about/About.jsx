@@ -9,7 +9,7 @@ import { BsLinkedin } from 'react-icons/bs';
 
 export default function About() {
     return (
-      <div className="aboutUs">
+      <div id="aboutUs">
         <h1>About Us</h1>
 
         <Row>
