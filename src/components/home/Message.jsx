@@ -2,6 +2,11 @@
 import React from 'react';
 import axios from 'axios'
 import { Col, Row } from 'react-bootstrap';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container'
+import '../../styles/message.css';
 
 
 class MessageBoard extends React.Component {
@@ -52,19 +57,32 @@ class MessageBoard extends React.Component {
 
   render() {
     return (
-      <div id='mBoard'>
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Write your joke sucka:
-            <textarea name='joke' value={this.state.joke} onChange={this.handleChange} placeholder="I pity da foo who ain't funny" />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
-        {this.state.data && this.state.data.map((post, index) => (
-          <React.Fragment key={index}>
-            <Row><Col><text>{`${post.user} said ${post.message}`}</text></Col></Row>
-          </React.Fragment>
-        ))}
+      <div className='message-board-container' >
+        <Container className='bg-warning pt-3'>
+          <h2>Funny Board</h2>
+          <Form onSubmit={this.handleSubmit} style={{ width: '40rem' }}>
+            <Form.Group className="pb-3" controlId="exampleForm.ControlTextarea1">
+              <Form.Control as='textarea' name='joke' value={this.state.joke} onChange={this.handleChange} placeholder=" What made you laugh today?" />
+              <div className='d-flex justify-content-end'>
+                <Button className='mt-3 px-4' variant="dark" as="input" type="submit" value="Post" />
+              </div>
+            </Form.Group>
+          </Form>
+        </Container>
+        <Container className='bg-light py-3' style={{ overflow: 'auto', height: '100%' }}>
+          {this.state.data && this.state.data.slice(0).reverse().map((post, index) => (
+            <React.Fragment key={index}>
+              <Card className='mb-4' style={{ width: '40rem' }}>
+                <Card.Header as="h5">{`${post.user} posted:`}</Card.Header>
+                <Card.Body className='bg-white'>
+                  <Card.Text>
+                    {post.message}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </React.Fragment>
+          ))}
+        </Container>
       </div>
     );
   }
