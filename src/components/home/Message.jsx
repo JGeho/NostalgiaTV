@@ -62,7 +62,7 @@ class MessageBoard extends React.Component {
         </form>
         {this.state.data && this.state.data.map((post, index) => (
           <React.Fragment key={index}>
-            <Row><Col><text>{`${post.user} ${post.message}`}</text></Col></Row>
+            <Row><Col><text>{`${post.user} said ${post.message}`}</text></Col></Row>
           </React.Fragment>
         ))}
       </div>

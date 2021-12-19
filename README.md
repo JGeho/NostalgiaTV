@@ -20,7 +20,7 @@ https://developers.google.com/youtube/v3/docs
 ## Deployment
 
 Back-End: https://afternoon-stream-01263.herokuapp.com/ <br>
-Front-End: 
+Front-End: https://laughbox-app.herokuapp.com/
 
 
 ## Technologies/Concepts
