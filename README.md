@@ -35,7 +35,11 @@ Early concept non-styled Splash Page<br>
 <img src="./src/components/about/Splashpage.png" alt="Splashpage pic" width="300px"><br>
 Finished Splash Page<br>
 <img src="./src/components/about/Finished Splash.png" alt="Splashpage pic" width="300px"><br>
-Home Page<br>
+Early concept Home Page<br>
 <img src="./src/components/about/Homepage.png" alt="Splashpage pic" width="300px"><br>
-About Page<br>
+Finished Home Page<br>
+<img src="./src/components/about/Finished Home.png" alt="Splashpage pic" width="300px"><br>
+Early About Page<br>
 <img src="./src/components/about/Aboutpage.png" alt="Splashpage pic" width="300px"><br>
+Finished About Page<br>
+<img src="./src/components/about/Finished About.png" alt="Splashpage pic" width="300px"><br>
