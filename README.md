@@ -26,13 +26,13 @@ Front-End: https://laughbox-app.herokuapp.com/
 ## Technologies/Concepts
 - HTML/CSS/Bootstrap
 - JavaScript
-- React
+- React (Functional and Class Components, React-Bootstrap)
 - Node/Express
 - PostgreSQL
 
 ## Screenshots:
 Early concept non-styled Splash Page<br>
-<img src="./src/components/about/Splashpage.png" alt="Splashpage pic" width="300px"><br>
+<img src="./src/components/about/Splashpage.png" alt="Splashpage pic" width="300px">
 Finished Splash Page<br>
 <img src="./src/components/about/Finished Splash.png" alt="Splashpage pic" width="300px"><br>
 Early concept Home Page<br>
