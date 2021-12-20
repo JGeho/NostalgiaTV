@@ -31,9 +31,8 @@ Front-End: https://laughbox-app.herokuapp.com/
 - PostgreSQL
 
 ## Screenshots:
-Early concept non-styled Splash Page<br>
+Early concept non-styled Splash Page               Finished Splash Page<br>
 <img src="./src/components/about/Splashpage.png" alt="Splashpage pic" width="300px">
-Finished Splash Page<br>
 <img src="./src/components/about/Finished Splash.png" alt="Splashpage pic" width="300px"><br>
 Early concept Home Page<br>
 <img src="./src/components/about/Homepage.png" alt="Splashpage pic" width="300px"><br>
