@@ -3,7 +3,6 @@ import { Row, Col } from 'react-bootstrap'
 import justinpic from './JustinPic.jpg';
 import ericpic from './derp.jpg';
 import gabepic from './linkedinPictureReal.JPG';
-
 import { BsGithub } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
 
@@ -11,7 +10,6 @@ export default function About() {
     return (
       <div id="aboutUs">
         <h1>About Us</h1>
-
         <Row>
           <Col>
             <h3>Eric Fricke</h3>

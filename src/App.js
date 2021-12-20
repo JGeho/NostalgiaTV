@@ -5,12 +5,9 @@ import Splashpage from './components/splashPage/SplashPage';
 import HomeWrapper from './components/home/HomeWrapper';
 import About from './components/about/About';
 
-//import NavBar from './components/common/NavBar';
-
 export default function App() {
   return (
     <React.Fragment>
-      {/* <NavBar /> */}
       <div className='App'>
         <Routes>
           <Route path="/home/:id" element={<HomeWrapper />} />
