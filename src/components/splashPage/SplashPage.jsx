@@ -2,7 +2,6 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import standup1 from './standup1.png'
 
-
 export default function Landingpage() {
   return (
     <div>

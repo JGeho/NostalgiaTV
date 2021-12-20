@@ -2,9 +2,6 @@ import React from 'react';
 import { Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
-//links added but still need to include routes as well as figure out how to make a link active when clicked
-
-
 const links = [
     { path: '/home', label: 'Home' },
     { path: '/splashPage', label: 'SplashPage' },

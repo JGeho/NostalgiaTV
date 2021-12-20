@@ -1,13 +1,10 @@
-//import React, { Component } from 'react';
 import React from 'react';
 import axios from 'axios'
-import { Col, Row } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container'
 import '../../styles/message.css';
-
 
 class MessageBoard extends React.Component {
   constructor(props) {
@@ -53,7 +50,6 @@ class MessageBoard extends React.Component {
       .catch(err => console.log(err));
 
   }
-
 
   render() {
     return (

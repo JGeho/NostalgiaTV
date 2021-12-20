@@ -1,10 +1,6 @@
-//import '../App.css';
 import React from 'react';
 import { Row } from 'react-bootstrap'
-//import { Route, Routes, Navigate } from 'react-router-dom';
-// import Search from "./Search";
 import HomePage from './Homepage';
-//import Splashpage from '../splashPage/SplashPage';
 import youtubeApi from "../../api/youtube";
 import VideoList from "./VideoList";
 import VideoPlayer from "./VideoPlayer";
@@ -44,7 +40,6 @@ export default class Home extends React.Component {
     render() {
         return (
             <React.Fragment >
-                {/* <Search onSearch={this.onSearch} /><br></br> */}
                 <div className='home-container'>
                     <HomePage onSearch={this.onSearch} />
                     <VideoList onVideoSelected={this.onVideoSelected} data={this.state.videoMetaInfo} />
