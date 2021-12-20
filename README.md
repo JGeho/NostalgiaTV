@@ -34,9 +34,9 @@ Front-End: https://laughbox-app.herokuapp.com/
 Early concept non-styled Splash Page &nbsp; &nbsp; &nbsp; &nbsp; Finished Splash Page<br>
 <img src="./src/components/about/Splashpage.png" alt="Splashpage pic" width="300px">
 <img src="./src/components/about/Finished Splash2.png" alt="Splashpage pic" width="300px"><br>
-Early concept Home Page &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Finished Home Page <br>
+Early concept Home Page &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Finished Home Page <br>
 <img src="./src/components/about/Homepage.png" alt="Splashpage pic" width="300px">
 <img src="./src/components/about/Finished Home2.png" alt="Splashpage pic" width="300px"><br>
-Early About Page &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Finished About Page<br>
+Early About Page &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Finished About Page<br>
 <img src="./src/components/about/Aboutpage.png" alt="Splashpage pic" width="300px">
 <img src="./src/components/about/Finished About2.png" alt="Splashpage pic" width="300px"><br>
