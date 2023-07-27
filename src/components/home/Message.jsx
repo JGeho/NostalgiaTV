@@ -27,7 +27,8 @@ class MessageBoard extends React.Component {
   }
 
   async getMessages() {
-    const response = await fetch(`https://afternoon-stream-01263.herokuapp.com/messages`);
+    const response = await fetch(`https://laughbox-backend.onrender.com/messages`);
+    // const response = await fetch(`http://localhost:3001/messages`);
     const data = await response.json();
     this.setState({ data });
   }
@@ -43,7 +44,7 @@ class MessageBoard extends React.Component {
     const user = this.props.user;
     alert('You did a funny: ' + message);
     //post request
-    axios.post('https://afternoon-stream-01263.herokuapp.com/message', { user, message })
+    axios.post('https://laughbox-backend.onrender.com/message', { user, message })
       .then(res => {
         this.getMessages();
       })

@@ -17,8 +17,8 @@ export default function Landingpage() {
         <Row>
           <form
             method="GET"
-            action="https://afternoon-stream-01263.herokuapp.com/auth/google">
-            {/* action="http://localhost:3001/auth/google"> */}
+            action="https://laughbox-backend.onrender.com/auth/google">
+            {/* // action="http://localhost:3001/auth/google"> */}
             <button className="btn btn-danger">
               <span className="fa fa-google"></span> Sign-in With Google
             </button>
